@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pety — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #fbf3ea;
+    --card: #ffffff;
+    --text: #2c2420;
+    --muted: #7a6f66;
+    --accent: #d9603b;
+    --border: #e8ddd0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 12px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .brand .paw { font-size: 1.4rem; }
+  .lang-switch {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--card);
+  }
+  .lang-switch button {
+    border: none;
+    background: transparent;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin: 32px 0 10px;
+    color: var(--accent);
+  }
+  p, li { color: var(--text); }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 28px 8px;
+  }
+  [data-i18n] { display: none; }
+  [data-i18n].active { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="paw">🐾</span> Pety</div>
+    <div class="lang-switch">
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+      <button id="btn-es" onclick="setLang('es')">ES</button>
+    </div>
+  </header>
+
+  <div class="card">
+
+    <!-- EN -->
+    <div data-i18n="en">
+      <h1>Pety Privacy Policy</h1>
+      <p class="updated">Last updated: September 1, 2026</p>
+
+      <p>Pety is an app for tracking your pets' health: weight, vaccines, medications, exams, and reminders. This policy explains what data the app uses, why, and who it's shared with.</p>
+
+      <h2>1. Who is responsible</h2>
+      <p>Pety is developed by Juan Cisneros, an independent developer. For any question about this policy or your data, write to <a href="mailto:anju.jjcg@gmail.com">anju.jjcg@gmail.com</a>.</p>
+
+      <h2>2. What data the app collects</h2>
+      <p><strong>2.1 Data you enter</strong><br>
+      Your pets' name, species, breed, birth date, and photo; weight, vaccine, medication, exam, and note records; attachments you upload (photos and documents). This data is about your pets, not about people.</p>
+      <p><strong>2.2 Google account data (optional)</strong><br>
+      If you choose to sign in with Google, Pety receives your name, email, and profile photo to identify your account. You can use the app fully without signing in — in that case no account data is collected.</p>
+      <p><strong>2.3 Subscription data</strong><br>
+      If you subscribe to Pety Premium, payment is processed by Google Play, and the subscription is managed by RevenueCat (revenuecat.com). Pety never receives or stores your card or payment details — only the state of your subscription (active, plan, renewal date).</p>
+      <p><strong>2.4 Notifications</strong><br>
+      Pety schedules local reminders on your device (for example, a medication's next dose). These reminders never leave your phone unless you enable cloud backup.</p>
+
+      <h2>3. Where your data is stored</h2>
+      <p><strong>By default, everything is stored only on your device</strong>, in a local database. Without an account or subscription, Pety never sends your data to any server.</p>
+      <p><strong>If you sign in and have Pety Premium active</strong>, your data (pet records and any attachments you upload) is backed up to Supabase (supabase.com), an infrastructure provider, so you can recover it if you switch phones. The backup is used exclusively while Premium is active: signing in with Google by itself does not create any backup.</p>
+
+      <h2>4. Who data is shared with</h2>
+      <p>Pety does not sell your data or use it for advertising. Data is only shared with the providers necessary to run the app:</p>
+      <ul>
+        <li><strong>Google</strong> (Google Sign-In)</li>
+        <li><strong>Supabase</strong> (cloud backup storage, Premium users only)</li>
+        <li><strong>RevenueCat</strong> (subscription management)</li>
+        <li><strong>Google Play Billing</strong> (payment processing)</li>
+      </ul>
+      <p>None of these providers receive your pets' health data except Supabase, and only for the backup you enabled yourself.</p>
+
+      <h2>5. Your choices</h2>
+      <ul>
+        <li>You can use Pety without creating an account, with no data ever leaving your phone.</li>
+        <li>You can sign out at any time from Settings; your pets stay on the device.</li>
+        <li>You can delete a pet or a record from the app; deleting it also removes it from your cloud backup if you had one active.</li>
+        <li>You can uninstall the app to erase all data stored locally on your device.</li>
+        <li>To request full deletion of your cloud backup, write to anju.jjcg@gmail.com.</li>
+      </ul>
+
+      <h2>6. Children</h2>
+      <p>Pety is not directed at children and does not knowingly collect data from anyone under 13.</p>
+
+      <h2>7. Changes to this policy</h2>
+      <p>If this policy changes significantly, the date at the top of this document will be updated. We recommend reviewing it occasionally.</p>
+
+      <h2>8. Contact</h2>
+      <p>For any question about this policy or your data: <a href="mailto:anju.jjcg@gmail.com">anju.jjcg@gmail.com</a>.</p>
+    </div>
+
+    <!-- ES -->
+    <div data-i18n="es">
+      <h1>Política de privacidad de Pety</h1>
+      <p class="updated">Última actualización: 1 de septiembre de 2026</p>
+
+      <p>Pety es una aplicación para llevar el registro de salud de tus mascotas: peso, vacunas, medicamentos, exámenes y recordatorios. Esta política explica qué datos usa la app, para qué, y con quién se comparten.</p>
+
+      <h2>1. Quién es el responsable</h2>
+      <p>Pety es desarrollada por Juan Cisneros, desarrollador independiente. Para cualquier consulta sobre esta política o tus datos, puedes escribir a <a href="mailto:anju.jjcg@gmail.com">anju.jjcg@gmail.com</a>.</p>
+
+      <h2>2. Qué datos recolecta la app</h2>
+      <p><strong>2.1 Datos que tú ingresas</strong><br>
+      Nombre, especie, raza, fecha de nacimiento y fotografía de tus mascotas; registros de peso, vacunas, medicamentos, exámenes y notas; adjuntos que subas (fotos y documentos). Estos datos son sobre tus mascotas, no sobre personas.</p>
+      <p><strong>2.2 Datos de tu cuenta de Google (opcional)</strong><br>
+      Si eliges iniciar sesión con Google, Pety recibe tu nombre, correo electrónico y foto de perfil para identificar tu cuenta. Puedes usar la app por completo sin iniciar sesión: en ese caso no se recolecta ningún dato de cuenta.</p>
+      <p><strong>2.3 Datos de suscripción</strong><br>
+      Si contratas Pety Premium, el procesamiento del pago lo realiza Google Play, y la gestión de la suscripción la realiza RevenueCat (revenuecat.com). Pety no recibe ni almacena datos de tu tarjeta o método de pago — solo el estado de tu suscripción (activa, plan, fecha de vencimiento).</p>
+      <p><strong>2.4 Notificaciones</strong><br>
+      Pety programa recordatorios locales en tu dispositivo (por ejemplo, la próxima dosis de un medicamento). Estos recordatorios no salen de tu teléfono salvo que actives el respaldo en la nube.</p>
+
+      <h2>3. Dónde se guardan tus datos</h2>
+      <p><strong>Por defecto, todo se guarda únicamente en tu dispositivo</strong>, en una base de datos local. Sin cuenta ni suscripción, Pety no envía tus datos a ningún servidor.</p>
+      <p><strong>Si inicias sesión y tienes Pety Premium activo</strong>, tus datos (registros de mascotas y los archivos adjuntos que subas) se respaldan en servidores de Supabase (supabase.com), un proveedor de infraestructura, para que puedas recuperarlos si cambias de teléfono. El respaldo se usa exclusivamente mientras la suscripción Premium está activa: iniciar sesión con Google, por sí solo, no genera ningún respaldo.</p>
+
+      <h2>4. Con quién se comparten los datos</h2>
+      <p>Pety no vende tus datos ni los usa con fines publicitarios. Los datos solo se comparten con los proveedores necesarios para operar la app:</p>
+      <ul>
+        <li><strong>Google</strong> (inicio de sesión con Google Sign-In)</li>
+        <li><strong>Supabase</strong> (almacenamiento del respaldo en la nube, solo para usuarios Premium)</li>
+        <li><strong>RevenueCat</strong> (gestión de suscripciones)</li>
+        <li><strong>Google Play Billing</strong> (procesamiento de pagos)</li>
+      </ul>
+      <p>Ninguno de estos proveedores recibe datos de salud de tus mascotas salvo Supabase, y únicamente para el respaldo que tú activaste.</p>
+
+      <h2>5. Tus opciones</h2>
+      <ul>
+        <li>Puedes usar Pety sin crear cuenta y sin que ningún dato salga de tu teléfono.</li>
+        <li>Puedes cerrar sesión en cualquier momento desde Ajustes; tus mascotas se quedan en el dispositivo.</li>
+        <li>Puedes eliminar una mascota o un registro desde la app; al eliminarlos también se eliminan del respaldo en la nube si lo tenías activo.</li>
+        <li>Puedes desinstalar la app para borrar todos los datos guardados localmente en tu dispositivo.</li>
+        <li>Para solicitar la eliminación completa de tu respaldo en la nube, escribe a anju.jjcg@gmail.com.</li>
+      </ul>
+
+      <h2>6. Menores de edad</h2>
+      <p>Pety no está dirigida a niños y no recolecta a sabiendas datos de menores de 13 años.</p>
+
+      <h2>7. Cambios a esta política</h2>
+      <p>Si esta política cambia de forma significativa, se actualizará la fecha al inicio del documento. Te recomendamos revisarla de vez en cuando.</p>
+
+      <h2>8. Contacto</h2>
+      <p>Ante cualquier duda sobre esta política o tus datos: <a href="mailto:anju.jjcg@gmail.com">anju.jjcg@gmail.com</a>.</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      el.classList.toggle('active', el.getAttribute('data-i18n') === lang);
+    });
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.documentElement.setAttribute('lang', lang);
+    try { localStorage.setItem('pety-legal-lang', lang); } catch (e) {}
+  }
+
+  (function initLang() {
+    var saved = null;
+    try { saved = localStorage.getItem('pety-legal-lang'); } catch (e) {}
+    if (saved === 'en' || saved === 'es') {
+      setLang(saved);
+      return;
+    }
+    // Sin preferencia guardada: solo si el dispositivo pide español explícitamente
+    // cambiamos el idioma. El inglés es el default de la app (ver CLAUDE.md), así
+    // que cualquier otro idioma del sistema cae también en inglés.
+    var deviceLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    setLang(deviceLang.indexOf('es') === 0 ? 'es' : 'en');
+  })();
+</script>
+</body>
+</html>
